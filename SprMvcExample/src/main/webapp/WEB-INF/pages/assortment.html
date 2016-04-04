@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>mainPage</title>
+    <link rel="stylesheet" href="../../resources/styles/mainTheme.css"/>
+    <link rel="stylesheet" href="../../resources/styles/mainPage2.css"/>
+    <link rel="stylesheet" href="../../resources/styles/assortPage.css"/>
+    <link rel="stylesheet" href="../../resources/styles/items.css"/>
+    <link rel="stylesheet" href="../../resources/styles/itemWindow.css">
+
+    <script src="../../resources/scripts/jquery-2.1.4.js"></script>
+    <script src="../../resources/scripts/mainPage.js"></script>
+    <script src="../../resources/scripts/ajaxItemView.js"></script>
+    <script src="../../resources/scripts/assortPage.js"></script>
+
+
+</head>
+<body>
+<div itemId="blackout"></div>
+
+<div class="main">
+    <div itemId="mainWrap">
+
+        <script src="../../resources/scripts/menuBasket.js"></script>
+        <div itemId="menuLine" class="clearfix">
+            <img src="../../resources/images/wolf-logo.png" width="120" height="120">
+            <div itemId="menuItems">
+                <div class="menuItem"><a href="/">HOME</a></div>
+                <div class="menuItem"><a href="/assortment-types">SHOP</a></div>
+                <div class="menuItem">DIARY</div>
+                <div class="menuItem">CONTACTS</div>
+            </div>
+            <div itemId="enter">
+                <a href="/basket">
+                    <div><img src="../../resources/images/bin.png" width="30" height="30"></div>
+                    <div itemId="final-cost">(<span>0</span> руб.)</div>
+                    <div itemId="basket-list"></div>
+                </a>
+            </div>
+        </div>
+        <div class="category-menu">
+            <div>ФРУКТЫ</div>
+            <div>ЦВЕТЫ</div>
+            <div>ПОСЫПКИ</div>
+        </div>
+
+
+
+        <div itemId="midLine">
+            <div itemId="photos">
+
+                <div itemId="switches">
+                </div>
+            </div>
+        </div>
+
+
+
+        <p class="sub-title">ШОКОЛАД С ЦВЕТАМИ:</p>
+            <div class="div-item">
+                <div class="item">
+                    <a href="/item/1">
+                        <img src="../../resources/images/Items/item1.jpg">
+                    </a>
+                    <div class="slider">
+                        <p ref="/getItem/1">ПРОСМОТР</p>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <div class="itemPrize">120</div>
+                    <div class="itemName">Name</div>
+                </div>
+            </div>
+
+            <div class="div-item">
+                <div class="item">
+                    <a href="/item/2">
+                        <img src="../../resources/images/Items/default.jpg">
+                    </a>
+                    <div class="slider">
+                        <p ref="/getItem/2">ПРОСМОТР</p>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <div class="itemPrize">130</div>
+                    <div class="itemName">Имя2</div>
+                </div>
+            </div>
+
+            <div class="div-item">
+                <div class="item">
+                    <a href="/item/3">
+                        <img src="">
+                    </a>
+                    <div class="slider">
+                        <p ref="/getItem/3">ПРОСМОТР</p>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <div class="itemPrize">150</div>
+                    <div class="itemName">Имя3</div>
+                </div>
+            </div>
+        <div class="div-item">
+            <div class="item">
+                <a href="/item/3">
+                    <img src="">
+                </a>
+                <div class="slider">
+                    <p ref="/getItem/3">ПРОСМОТР</p>
+                </div>
+            </div>
+            <div class="itemInfo">
+                <div class="itemPrize">150</div>
+                <div class="itemName">Имя3</div>
+            </div>
+        </div>
+        <div class="div-item">
+            <div class="item">
+                <a href="/item/3">
+                    <img src="">
+                </a>
+                <div class="slider">
+                    <p ref="/getItem/3">ПРОСМОТР</p>
+                </div>
+            </div>
+            <div class="itemInfo">
+                <div class="itemPrize">150</div>
+                <div class="itemName">Имя3</div>
+            </div>
+        </div>
+        <div class="div-item">
+            <div class="item">
+                <a href="/item/3">
+                    <img src="">
+                </a>
+                <div class="slider">
+                    <p ref="/getItem/3">ПРОСМОТР</p>
+                </div>
+            </div>
+            <div class="itemInfo">
+                <div class="itemPrize">150</div>
+                <div class="itemName">Имя3</div>
+            </div>
+        </div>
+
+            <div class="div-item">
+                <div class="item">
+                    <a href="/item/4">
+                        <img src="">
+                    </a>
+                    <div class="slider">
+                        <p ref="/getItem/4">ПРОСМОТР</p>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <div class="itemPrize">150</div>
+                    <div class="itemName">Name2</div>
+                </div>
+            </div>
+
+            <div class="div-item">
+                <div class="item">
+                    <a href="/item/5">
+                        <img src="">
+                    </a>
+                    <div class="slider">
+                        <p ref="/getItem/5">ПРОСМОТР</p>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <div class="itemPrize">150</div>
+                    <div class="itemName">Name3</div>
+                </div>
+            </div>
+        <p class="sub-title">ШОКОЛАД С ФРУКТАМИ:</p>
+        <div class="div-item">
+            <div class="item">
+                <a href="/item/1">
+                    <img src="../../resources/images/Items/item1.jpg">
+                </a>
+                <div class="slider">
+                    <p ref="/getItem/1">ПРОСМОТР</p>
+                </div>
+            </div>
+            <div class="itemInfo">
+                <div class="itemPrize">120</div>
+                <div class="itemName">Name</div>
+            </div>
+        </div>
+
+        <div class="div-item">
+            <div class="item">
+                <a href="/item/2">
+                    <img src="../../resources/images/Items/default.jpg">
+                </a>
+                <div class="slider">
+                    <p ref="/getItem/2">ПРОСМОТР</p>
+                </div>
+            </div>
+            <div class="itemInfo">
+                <div class="itemPrize">130</div>
+                <div class="itemName">Имя2</div>
+            </div>
+        </div>
+
+        <div class="div-item">
+            <div class="item">
+                <a href="/item/3">
+                    <img src="">
+                </a>
+                <div class="slider">
+                    <p ref="/getItem/3">ПРОСМОТР</p>
+                </div>
+            </div>
+            <div class="itemInfo">
+                <div class="itemPrize">150</div>
+                <div class="itemName">Имя3</div>
+            </div>
+        </div>
+        <div class="div-item">
+            <div class="item">
+                <a href="/item/3">
+                    <img src="">
+                </a>
+                <div class="slider">
+                    <p ref="/getItem/3">ПРОСМОТР</p>
+                </div>
+            </div>
+            <div class="itemInfo">
+                <div class="itemPrize">150</div>
+                <div class="itemName">Имя3</div>
+            </div>
+        </div>
+        <div class="div-item">
+            <div class="item">
+                <a href="/item/3">
+                    <img src="">
+                </a>
+                <div class="slider">
+                    <p ref="/getItem/3">ПРОСМОТР</p>
+                </div>
+            </div>
+            <div class="itemInfo">
+                <div class="itemPrize">150</div>
+                <div class="itemName">Имя3</div>
+            </div>
+        </div>
+        <div class="div-item">
+            <div class="item">
+                <a href="/item/3">
+                    <img src="">
+                </a>
+                <div class="slider">
+                    <p ref="/getItem/3">ПРОСМОТР</p>
+                </div>
+            </div>
+            <div class="itemInfo">
+                <div class="itemPrize">150</div>
+                <div class="itemName">Имя3</div>
+            </div>
+        </div>
+
+        <div class="div-item">
+            <div class="item">
+                <a href="/item/4">
+                    <img src="">
+                </a>
+                <div class="slider">
+                    <p ref="/getItem/4">ПРОСМОТР</p>
+                </div>
+            </div>
+            <div class="itemInfo">
+                <div class="itemPrize">150</div>
+                <div class="itemName">Name2</div>
+            </div>
+        </div>
+
+        <div class="div-item">
+            <div class="item">
+                <a href="/item/5">
+                    <img src="">
+                </a>
+                <div class="slider">
+                    <p ref="/getItem/5">ПРОСМОТР</p>
+                </div>
+            </div>
+            <div class="itemInfo">
+                <div class="itemPrize">150</div>
+                <div class="itemName">Name3</div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+</div>
+<div itemId="item-preview"></div>
+</body>
+</html>

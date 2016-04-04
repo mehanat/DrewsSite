@@ -1,0 +1,66 @@
+#itemsWrap{
+    float: right;
+    width: 900px;
+    min-height: 600px;
+    margin-top: 20px;
+}
+
+.div-item{
+    width: 190px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+    background: url("../../resources/images/no-image-available.jpg") no-repeat;
+    background-size: 190px;
+}
+.item{
+    position: relative;
+    height: 210px;
+    width: 190px;
+    border: 1px solid black;
+}
+.item img{
+    height: 210px;
+    width: 190px;
+}
+.item .slider{
+    display: none;
+    background: #fcc229;
+    box-sizing: border-box;
+    height: 30px;
+    width: inherit;
+    position: absolute;
+    bottom: 0px;
+    opacity: 0.8;
+    padding: 5px;
+    padding-top: 0px;
+}
+.item .slider p{
+    color: ghostwhite;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: monospace;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+.div-item .itemInfo{
+    width: 180px;
+    height: 30px;
+
+    padding: 5px;
+}
+.div-item .itemInfo .itemName{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    width: 130px;
+}
+.div-item .itemInfo .itemPrize{
+    font-size: 16px;
+    font-weight: bolder;
+    color: black;
+    float: right;
+    width: 50px;
+    border-left: 1px solid darkgrey;
+    padding-left: 3px;
+}

@@ -1,0 +1,39 @@
+body{
+    background: darkgrey;
+    margin: 0px;
+    font-family: monospace;
+}
+main {
+    min-height: 800px;
+    background: #FFE6BD;
+}
+#mainWrap{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.clearfix:after{
+    content:'';
+    display:table;
+    clear:both;
+}
+#item-preview{
+    position: fixed;
+    z-index: 100;
+    background: white;
+    border: 1px solid black;
+    left: 50%;
+    top: 200px;
+    margin-left: -420px;
+}
+#blackout{
+    background: #000;
+    height: 100%;
+    opacity: 0.9;
+    position: fixed;
+    width: 100%;
+    z-index: 80;
+    top: 0;
+    left: 0;
+    display: none;
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/classes/Item.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/controllers/AssortController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/controllers/HomeController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/controllers/ItemViewController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/data/DAO/HibernateDAO/HibernateAssortmentDAO.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/data/DAO/HibernateDAO/HibernateItemDAO.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/data/DAO/InterfaceDAO/AssortmentDAO.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/data/DAO/InterfaceDAO/ItemDAO.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/data/service/ImplService/AssortmentServiceImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/data/service/ImplService/ItemServiceImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/data/service/InrerfaceService/AssortmentService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home.jsp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/ajaxItemView.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/resources/styles/mainPage.css" charset="UTF-8" />
+  </component>
+</project>

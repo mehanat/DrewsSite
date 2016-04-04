@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+        <session-factory>
+                <property name="show_sql">true</property>
+                <property name="hibernate.connection.CharSet">utf8</property>
+                <property name="hibernate.connection.characterEncoding">utf8</property>
+
+                <mapping class="com.springapp.mvc.classes.Item" />
+                <mapping class="com.springapp.mvc.classes.ItemFeatures"/>
+                <mapping class="com.springapp.mvc.classes.Comment" />
+        </session-factory>
+</hibernate-configuration>

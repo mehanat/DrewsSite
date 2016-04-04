@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+       <definition name="homeTampt" template="/WEB-INF/pages/home-tamplate.jsp">
+              <put-attribute name="menu-bar" value="menuBar"/>
+       </definition>
+
+       <definition name="home" extends="homeTampt">
+              <put-attribute name="home-content" value="/WEB-INF/pages/home.jsp"/>
+       </definition>
+
+        <definition name="mainTampt" template="/WEB-INF/pages/assort-tamplate.jsp">
+            <put-attribute name="menuBar" value="menuBar"/>
+        </definition>
+
+        <definition name="assortment-types" extends="mainTampt">
+            <put-attribute name="assortmentList" value="assortmentList"/>
+            <put-attribute name="assortmentTypes" value="/WEB-INF/pages/assortment-types.jsp"/>
+        </definition>
+
+        <definition name="assortment" template="/WEB-INF/pages/items-tamplate.jsp">
+            <put-attribute name="menuBar" value="menuBar"/>
+            <put-attribute name="assortmenttList" value="assortmentList" />
+            <put-attribute name="assortment" value="/WEB-INF/pages/assortment.jsp" />
+        </definition>
+
+
+
+        <definition name="item-window" template="/WEB-INF/pages/itemView-template.jsp">
+            <put-attribute name="menuBar" value="menuBar"/>
+            <put-attribute name="assortmenttList" value="assortmentList" />
+            <put-attribute name="itemWindow" value="/WEB-INF/pages/item-window.jsp"/>
+        </definition>
+
+        <definition name="basket-page" template="/WEB-INF/pages/basket-template.jsp">
+            <put-attribute name="menuBar" value="menuBar"/>
+            <put-attribute name="basket-content" value="/WEB-INF/pages/basket-page.jsp"/>
+        </definition>
+
+
+
+        <definition name="assortmentList" preparer="com.springapp.mvc.controllers.AssortmentTypesController" template="/WEB-INF/pages/assortment-list.jsp">
+        </definition>
+        <definition name="menuBar" preparer="com.springapp.mvc.controllers.MenuBarController" template="/WEB-INF/pages/views/menu-bar.jsp">
+        </definition>
+</tiles-definitions>
