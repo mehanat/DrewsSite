@@ -42,7 +42,7 @@ public class ItemViewController {
     @RequestMapping(value = "/add-comment",method = RequestMethod.POST)
     public String addNewComment( HttpServletResponse response, @PathVariable long itemId, @RequestParam(required = false) String name, @RequestParam(required = true) String text) {
         response.setCharacterEncoding("UTF-8");
-        System.out.println(text);
+
         if (name.equals("")) name="Anonymous";
         Comment comment = new Comment(name, text, itemId);
         itemService.addComment(comment);

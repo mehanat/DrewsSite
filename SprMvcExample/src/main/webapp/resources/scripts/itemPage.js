@@ -2,6 +2,24 @@
  * Created by Анатолий on 24.11.2015.
  */
 $(document).ready(function(){
+
+
+    var entityMap = {
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': '&quot;',
+        "'": '&#39;',
+        "/": '&#x2F;'
+    };
+
+    function escapeHtml(string) {
+        return String(string).replace(/[&<>"'\/]/g, function (s) {
+            return entityMap[s];
+        });
+    }
+
+
     var amount=$("#amount");
     $(".item-window .to-basket button").click(function(ev){
         if(amount.val()>0) {
@@ -59,8 +77,8 @@ $(document).ready(function(){
                 data.forEach(function(comment){
                     var date=new Date(comment["date"]);
                     $("#comments-list").append('<div class="comment">'+
-                    '<p class="title"><span>'+comment["authorName"]+', </span><span>'+date.getDay()+'.'+date.getMonth()+'.'+date.getFullYear()+'</span></p>'+
-                    '<p class="text">'+comment["text"]+'</p>'+
+                    '<p class="title"><span>'+escapeHtml(comment["authorName"])+', </span><span>'+date.getDay()+'.'+date.getMonth()+'.'+date.getFullYear()+'</span></p>'+
+                    '<p class="text">'+escapeHtml(comment["text"])+'</p>'+
                     '</div>')
                 })
             }

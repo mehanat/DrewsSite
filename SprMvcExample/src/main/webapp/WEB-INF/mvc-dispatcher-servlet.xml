@@ -13,6 +13,8 @@
     <mvc:annotation-driven/>
     <tx:annotation-driven transaction-manager="transactionManager"/>
 
+    <context:property-placeholder location="resources/postgres.properties" system-properties-mode="OVERRIDE"/>
+
     <bean class="org.springframework.web.servlet.view.tiles2.TilesViewResolver"/>
     <bean class="org.springframework.web.servlet.view.tiles2.TilesConfigurer">
         <property name="definitions">
@@ -27,12 +29,11 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <bean name="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
-        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://127.0.0.1:3306/myshop?characterEncoding=UTF-8"/>
-        <property name="username" value="root"/>
-        <property name="password" value=""/>
-        <property name="initialSize" value="5"/>
+    <bean name="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="${database.driverClassName}"/>
+        <property name="url" value="${database.url}"/>
+        <property name="username" value="${database.username}"/>
+        <property name="password" value="${database.password}"/>
     </bean>
     <bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
