@@ -7,9 +7,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-/**
- * Created by Анатолий on 19.11.2015.
- */
 @Component
 public class Basket implements Serializable{
 
