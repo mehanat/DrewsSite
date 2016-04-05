@@ -37,11 +37,11 @@
 	<li>
 		<div class="div-item">
 			<div class="item">
-				<a href="/item/1">
+				<a href="/item/6">
 					<img src="../../resources/images/Items/item1.jpg">
 				</a>
 				<div class="slider">
-					<p ref="/getItem/1">ПРОСМОТР</p>
+					<p ref="/getItem/6">ПРОСМОТР</p>
 				</div>
 			</div>
 			<div class="itemInfo">
@@ -168,11 +168,11 @@
 	<li>
 		<div class="div-item">
 			<div class="item">
-				<a href="/item/1">
+				<a href="/item/6">
 					<img src="../../resources/images/Items/item1.jpg">
 				</a>
 				<div class="slider">
-					<p ref="/getItem/1">ПРОСМОТР</p>
+					<p ref="/getItem/6">ПРОСМОТР</p>
 				</div>
 			</div>
 			<div class="itemInfo">
