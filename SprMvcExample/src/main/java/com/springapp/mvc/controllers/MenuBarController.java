@@ -8,9 +8,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
 
-/**
- * Created by Анатолий on 19.11.2015.
- */
+
 @Controller
 @Scope("session")
 public class MenuBarController extends ViewPreparerSupport {

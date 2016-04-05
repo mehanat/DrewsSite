@@ -5,9 +5,7 @@ import com.springapp.mvc.classes.Item;
 
 import java.util.List;
 
-/**
- * Created by Анатолий on 10.11.2015.
- */
+
 public interface ItemService {
     void saveItem(Item item);
     void addItem(Item item);

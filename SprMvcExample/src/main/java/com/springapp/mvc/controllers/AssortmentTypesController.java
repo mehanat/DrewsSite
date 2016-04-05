@@ -8,9 +8,6 @@ import org.springframework.stereotype.Controller;
 
 import java.util.Map;
 
-/**
- * Created by Анатолий on 15.11.2015.
- */
 @Controller
 @Scope("session")
 public class AssortmentTypesController extends ViewPreparerSupport{

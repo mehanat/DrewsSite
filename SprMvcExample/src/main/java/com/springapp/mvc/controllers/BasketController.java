@@ -11,9 +11,7 @@ import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-/**
- * Created by Анатолий on 17.11.2015.
- */
+
 @Controller
 @SessionAttributes(value = "basket")
 public class BasketController {
