@@ -8,9 +8,10 @@ import java.util.List;
 
 public interface ItemService {
     void saveItem(Item item);
-    void addItem(Item item);
+    Item addItem(Item item);
     Item getItemById(long id);
     Item getItemByName(String name);
+    List<Item> getAll();
     List<Comment> getComments(long id);
     void addComment(Comment comment);
 }

@@ -6,9 +6,11 @@ import com.springapp.mvc.data.DAO.InterfaceDAO.ItemDAO;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.support.DataAccessUtils;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Objects;
 
 
 /**
@@ -28,27 +30,34 @@ public class HibernateItemDAO implements ItemDAO {
 
     @Override
     public void saveItem(Item item) {
-        currentSession().update(item);
+       currentSession().update(item);
     }
 
     @Override
-    public void addItem(Item item) {
-        currentSession().save(item);
+    public Item addItem(Item item) {
+        return (Item) currentSession().save(item);
     }
 
-
+    @Override
     public Item getItemById(long id) {
         return (Item) currentSession().get(Item.class, id);
     }
 
     @Override
     public Item getItemByName(String name) {
-        return ((List<Item>)currentSession().createSQLQuery("SELECT * FROM items WHERE name=:name").addEntity(Item.class).setString("name", name).list()).get(0);
+        return (Item) DataAccessUtils.singleResult(currentSession().getNamedQuery(Item.GET_BY_NAME).setString("name", name).list());
+        //return ((List<Item>)currentSession().createSQLQuery("SELECT * FROM items WHERE name=:name").addEntity(Item.class).setString("name", name).list()).get(0);
+    }
+
+    @Override
+    public List<Item> getAll() {
+        return (List<Item>) currentSession().getNamedQuery(Item.GET_ALL).list();
     }
 
     @Override
     public List<Comment> getComments(long id) {
-        return ((List<Comment>)currentSession().createSQLQuery("SELECT * FROM comments WHERE itemId=:id").addEntity(Comment.class).setLong("id", id).list());
+        return (List<Comment>) currentSession().getNamedQuery(Item.GET_COMMENTS).setLong("itemId", id).list();
+        //return ((List<Comment>)currentSession().createSQLQuery("SELECT * FROM comments WHERE itemId=:id").addEntity(Comment.class).setLong("id", id).list());
     }
 
     @Override

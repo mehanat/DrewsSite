@@ -32,11 +32,11 @@ public class BasketController {
         Basket basket= (Basket) session.getAttribute("basket");
         return basket.getItems();
     }
+
     @RequestMapping(value = "/deleteFromBasket", method = RequestMethod.GET, headers="Accept=application/json")
     public @ResponseBody Basket deleteFromBasketList(@RequestParam Long itemId, HttpSession session){
         Basket basket= (Basket) session.getAttribute("basket");
         basket.deleteItem(itemId);
-
         return basket;
     }
 

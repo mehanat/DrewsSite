@@ -66,6 +66,7 @@ ul li>div{
 }
 #menuLine .menu-icon:last-child #basket-list{
     position: absolute;
+    z-index: 1000;
     left: -100px;
     width: 300px;
     display: none;

@@ -54,6 +54,7 @@ body{
 }
 #menuLine #enter #basket-list{
     position: absolute;
+    z-index: 1000;
     left: -100px;
     width: 300px;
     display: none;

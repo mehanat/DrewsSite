@@ -19,7 +19,7 @@
   </div>
 </div>
 <div class="category-menu">
-  <a href="/assortment-types/all/fruit"><div>ФРУКТЫ</div></a>
-  <a href="/assortment-types/all/flower"><div>ЦВЕТЫ</div></a>
-  <a href="/assortment-types/all/topping"><div>ПОСЫПКИ</div></a>
+  <a href=""><div>ФРУКТЫ</div></a>
+  <a href=""><div>ЦВЕТЫ</div></a>
+  <a href=""><div>ПОСЫПКИ</div></a>
 </div>

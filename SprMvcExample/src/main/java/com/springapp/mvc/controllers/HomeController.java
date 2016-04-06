@@ -1,7 +1,6 @@
 package com.springapp.mvc.controllers;
 
 import com.springapp.mvc.classes.Item;
-import com.springapp.mvc.data.service.InrerfaceService.AssortmentService;
 import com.springapp.mvc.data.service.InrerfaceService.ItemService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,13 +17,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class HomeController {
 	@Autowired
 	ItemService itemService;
-	@Autowired
-	AssortmentService assortmentService;
 
 	@RequestMapping(method = RequestMethod.GET)
-	public String printWelcome(ModelMap model) {
+	public String getHome(ModelMap model) {
 
-		model.addAttribute("favourite", assortmentService.getFavourite());
+		model.addAttribute("items", itemService.getAll());
 		return "home";
 	}
 

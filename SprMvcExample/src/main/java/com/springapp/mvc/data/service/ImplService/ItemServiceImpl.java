@@ -26,8 +26,8 @@ public class ItemServiceImpl implements ItemService {
     }
 
 
-    public void addItem(Item item) {
-
+    public Item addItem(Item item) {
+        return hibernateItemDAO.addItem(item);
     }
 
 
@@ -39,6 +39,11 @@ public class ItemServiceImpl implements ItemService {
     @Override
     public Item getItemByName(String name) {
         return hibernateItemDAO.getItemByName(name);
+    }
+
+    @Override
+    public List<Item> getAll() {
+        return hibernateItemDAO.getAll();
     }
 
     @Override

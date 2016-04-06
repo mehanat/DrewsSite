@@ -1,11 +1,10 @@
 package com.springapp.mvc.classes;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
 import javax.persistence.*;
 import java.util.Date;
 
-/**
- * Created by Анатолий on 27.12.2015.
- */
 @Entity
 @Table(name = "comments")
 public class Comment {
@@ -14,12 +13,14 @@ public class Comment {
     @Column(name="id")
     private long id;
     @Column(name = "itemId")
+    @NotEmpty
     private long itemId;
     @Column(name = "authorName")
     private String authorName;
     @Column(name = "date")
     private Date date;
     @Column(name = "text")
+    @NotEmpty
     private String text;
 
     public Comment() {

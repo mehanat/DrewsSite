@@ -21,7 +21,7 @@
 
 <div id="mainWrap" class="clearfix">
     <tiles:insertAttribute name="menuBar"/>
-    <tiles:insertAttribute name="assortmenttList"/>
+    <%--<tiles:insertAttribute name="assortmenttList"/>--%>
     <tiles:insertAttribute name="assortment" />
 </div>
 </div>

@@ -7,6 +7,11 @@
           <element id="module-output" name="SprMvcExample" />
         </element>
         <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.18" />
+          <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.18" />
+          <element id="library" level="project" name="Maven: org.slf4j:jul-to-slf4j:1.7.18" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.1.6" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.1.6" />
           <element id="library" level="project" name="Maven: javax.mail:mail:1.4.5" />
           <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.13" />
@@ -16,9 +21,6 @@
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.4.0" />
           <element id="library" level="project" name="Maven: javassist:javassist:3.12.1.GA" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.6" />
-          <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.5.8" />
-          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.5.8" />
-          <element id="library" level="project" name="Maven: log4j:log4j:1.2.14" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-annotations:3.5.6-Final" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-core:3.5.6-Final" />
           <element id="library" level="project" name="Maven: antlr:antlr:2.7.6" />
@@ -28,6 +30,8 @@
           <element id="library" level="project" name="Maven: javax.transaction:jta:1.1" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-commons-annotations:3.2.0.Final" />
           <element id="library" level="project" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.0.Final" />
+          <element id="library" level="project" name="Maven: org.hibernate:hibernate-validator:4.1.0.Final" />
+          <element id="library" level="project" name="Maven: javax.validation:validation-api:1.0.0.GA" />
           <element id="library" level="project" name="Maven: org.springframework:spring-orm:4.1.1.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.1.1.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.1.1.RELEASE" />
@@ -39,7 +43,6 @@
           <element id="library" level="project" name="Maven: org.apache.tiles:tiles-core:2.2.2" />
           <element id="library" level="project" name="Maven: commons-digester:commons-digester:2.0" />
           <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.8.0" />
-          <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.5.8" />
           <element id="library" level="project" name="Maven: org.apache.tiles:tiles-jsp:2.2.2" />
           <element id="library" level="project" name="Maven: org.apache.tiles:tiles-api:2.2.2" />
           <element id="library" level="project" name="Maven: org.apache.tiles:tiles-servlet:2.2.2" />

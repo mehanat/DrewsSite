@@ -1,15 +1,24 @@
 package com.springapp.mvc.classes;
 
 
+import org.hibernate.validator.constraints.NotEmpty;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
-/**
- * Created by Анатолий on 10.11.2015.
- */
+@NamedQueries({
+    @NamedQuery(name = Item.GET_BY_NAME, query = "FROM Item i WHERE i.name=:name"),
+    @NamedQuery(name = Item.GET_ALL, query = "FROM Item i"),
+    @NamedQuery(name = Item.GET_COMMENTS, query = "FROM Comment c WHERE c.itemId=:itemId")
+})
 @Entity
 @Table(name = "items")
 public class Item implements Serializable {
+
+    public static final String GET_ALL = "Item.getAll";
+    public static final String GET_BY_NAME="Item.getByName";
+    public static final String GET_COMMENTS="Item.getComments";
+
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Column(name="itemId")
@@ -17,12 +26,16 @@ public class Item implements Serializable {
     @OneToOne(cascade=CascadeType.ALL, mappedBy="item")
     private ItemFeatures itemFeatures;
     @Column(name = "cost")
+    @NotEmpty
     private int cost;
     @Column(name = "name")
+    @NotEmpty
     private String name;
     @Column(name = "type")
+    @NotEmpty
     private String type;
     @Column(name = "description")
+    @NotEmpty
     private String description;
     @Column(name = "imagePath")
     private String imagePath;
